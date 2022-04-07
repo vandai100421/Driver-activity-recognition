@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <script src="/static/js/jquery 3.5.0.js"></script>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <h3 class="header">Phần Mềm Nhận Diện Hành Vi Của lái Xe</h3>
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Đăng nhập</h1>
+            </div>
+            <div class="login-form">
+                <form action="/login" method="POST">
+                    <div class="control-group">
+                        <input type="text" class="login-field" value="" placeholder="Nhập tên người lái xe" name="username" required>
+                        <label class="login-field-icon fui-user" for="login-name"></label></div>
+                    <input type="submit" value="Đăng nhập" class="btn btn-primary btn-large btn-block">
+                </form>
+                <p id="wrong-login">{{msg}}</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+</body>
+
+</html>
